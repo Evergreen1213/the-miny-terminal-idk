@@ -1,0 +1,1 @@
+git clone https://github.com/Evergreen1213/the-miny-terminal-idk.git
