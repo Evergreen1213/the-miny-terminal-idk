@@ -22,9 +22,11 @@ while [ true ]; do
     elif [ "$dat_input" = 'd' ] || [ "$dat_input" = 'download']; then
         echo drag the folder where you want the file to download into this terminal window
         read download_folder
-        cd ~$download_folder
+        cd $download_folder
+        
         git clone https://github.com/Evergreen1213/the-miny-terminal-idk2.git
-        bash "/the-miny-terminal-idk2/download_and_run_the_github.bash"
+        bash "$download_folder/the-miny-terminal-idk2/download_and_run_the_github.bash"
+
         break
 
     else
