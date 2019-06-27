@@ -10,8 +10,7 @@ while [ true ]; do
         while true; do
             echo drag the file into this terminal window and press ENTER.
             read update_file_directry
-            if [[ -f "$update_file_directry" ]]
-            then
+            if [[ -f "$update_file_directry" ]]; then
                 echo "file exists"
                 break
             else
