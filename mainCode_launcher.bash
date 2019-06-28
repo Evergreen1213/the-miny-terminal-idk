@@ -1,5 +1,6 @@
 $user = whoami
-
+echo drag the app in here
+input whereisapp
 
 echo "type stop to return to main"
 while [ true ]; do
@@ -12,10 +13,9 @@ while [ true ]; do
             echo "sending user to downloader/updater"
         else
              # body
-        fi
-        
-    elif [ condition ]; then
-         # body
+        fi 
+    elif [ $input = "tetris" ]; then
+         bash "the-miny-terminal-idk2/Games/Terminal-Tetris-master/play_tetris.py"
     else
          # body
     fi
