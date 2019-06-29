@@ -15,7 +15,7 @@ while [ true ]; do
              # body
         fi 
     elif [ $input = "tetris" ]; then
-         bash "the-miny-terminal-idk2/Games/Terminal-Tetris-master/play_tetris.py"
+         bash "$whereisapp/Games/Terminal-Tetris-master/play_tetris.py"
     else
          # body
     fi
