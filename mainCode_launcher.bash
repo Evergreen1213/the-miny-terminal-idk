@@ -15,9 +15,13 @@ while [ true ]; do
              # body
         fi 
     elif [ $input = "tetris" ]; then
-         bash "$whereisapp/Games/Terminal-Tetris-master/play_tetris.py"
+          echo this game is not made by me
+          echo "type c to see citations"
+          echo "type p to play game"
+          echo "type q to quit"
+          bash "$whereisapp/Games/Terminal-Tetris-master/play_tetris.py"
     else
-         # body
+         echo "command unrecognised"
     fi
     
 done
