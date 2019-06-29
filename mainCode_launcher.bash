@@ -1,6 +1,6 @@
 $user = whoami
 echo drag the app in here
-input whereisapp
+read whereisapp
 
 echo "type stop to return to main"
 while [ true ]; do
@@ -15,11 +15,26 @@ while [ true ]; do
              # body
         fi 
     elif [ $input = "tetris" ]; then
-          echo this game is not made by me
+          echo "this game is not made by the creator of The Mini Terminal"
           echo "type c to see citations"
           echo "type p to play game"
-          echo "type q to quit"
-          bash "$whereisapp/Games/Terminal-Tetris-master/play_tetris.py"
+          echo "type anyting else to quit"
+          read game_start_input
+          if [ $game_start_imput = "c" ]; then
+               open "https://github.com/bsamek/Tetris"
+          elif [ $game_start_imput = "p" ]; then
+               bash "the-miny-terminal-idk2/Games/Terminal-Tetris-master/play_tetris.py"
+          else
+               echo "quitting"
+          fi
+          
+          python "$whereisapp/Games/Terminal-Tetris-master/play_tetris.py"
+     
+     
+     elif [ $input = "stop" ]; then
+
+     break
+
     else
          echo "command unrecognised"
     fi
